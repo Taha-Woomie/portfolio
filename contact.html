@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Leif Kitty</title>
+</head>
+
+<body>
+    <a href="#content">Skip to content</a>
+    <header>
+        <p>Leif Kitty</p>
+        <br>
+        <p>Computer Engineering Student, Web and App Development</p>
+        <br>
+        <nav aria-label="Primary">
+            <a href="./index.html">Main Page</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./index.html#about-me">About Me</a>
+            <a href="./contact.html" aria-current="page">Contact Me</a>
+        </nav>
+    </header>
+    <main id="content" tabindex="-1">
+        <h1>Contact</h1>
+        <form method="post" action="#">
+            <fieldset>
+                <legend>Your Details</legend>
+                <label for="name">Your Name</label>
+                <input id="name" name="text" type="text" required minlength="2" maxlength="60" autocomplete="name">
+                <br>
+                <label for="email">Your Email Address</label>
+                <input id="email" name="email" type="email" required autocomplete="email">
+                <br>
+                <label for="company">Company/Organization (Optional)</label>
+                <input id="company" name="company" type="text" autocomplete="organization">
+                <br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Project</legend>
+                <label for="project">Project Type</label>
+                <select id="project" name="project" required>
+                    <option value="">Choose a Type</option>
+                    <optgroup label="Web">
+                        <option value="frontend">Frontend</option>
+                        <option value="backend">Backend</option>
+                    </optgroup>
+                    <optgroup label="App">
+                        <option value="desktop">Desktop Application</option>
+                        <option value="mobile">Mobile Application</option>
+                    </optgroup>
+                    <optgroup label="Other">
+                        <option value="data">Data</option>
+                        <option value="machine_learning">Machine Learning</option>
+                        <option value="Other">Other</option>
+                    </optgroup>
+
+                </select>
+
+                <br>
+                <fieldset>
+                    <legend>Work mode</legend>
+                    <input id="remote" type="Radio" name="workmode" value="remote" required checked>
+                    <label for="remote">Remote</label>
+                    <input id="onsite" type="Radio" name="workmode" value="onsite">
+                    <label for="onsite">Onsite</label>
+                    <input id="hybrid" type="Radio" name="workmode" value="hybrid">
+                    <label for="hybrid">Hybrid</label>
+                </fieldset>
+
+                <br>
+                <fieldset>
+                    <legend>Services</legend>
+                    <input id="design" name="services" value="design" type="checkbox" required>
+                    <label for="design">Design</label>
+                    <input id="backend" name="services" value="backend" type="checkbox">
+                    <label for="backend">Backend</label>
+                    <input id="frontend" name="services" value="frontend" type="checkbox">
+                    <label for="frontend">Frontend</label>
+                </fieldset>
+
+                <br>
+                <label for="start_date">Start Date:</label>
+                <input type="date" id="start_date" name="start_date" min="2026-10-28" required>
+
+                <br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" maxlength="500" aria-describedby="message_hint"></textarea>
+                <p id="message_hint">
+                    Tell me what you need and by when.
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>How I reply</legend>
+                <fieldset>
+                    <legend>Reply Preference</legend>
+                    <input type="radio" id="reply_email" name="reply_preference" value="email" required checked>
+                    <label for="reply_email">Email</label>
+
+                    <input type="radio" id="reply_phone" name="reply_preference" value="phone">
+                    <label for="reply_phone">Phone</label>
+                </fieldset>
+
+                <br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[6-9][0-9]{8}"
+                    title="Enter 9 digits, starting with 6, 7, 8, or 9" autocomplete="tel">
+                <br>
+
+                <input type="checkbox" id="privacy" name="privacy" value="accepted" required>
+                <label for="privacy">I accept the privacy policy</label>
+
+            </fieldset>
+            <p><button type="submit">Send Message</button></p>
+            <p><button type="reset">Clear</button></p>
+
+        </form>
+    </main>
+    <footer>
+        <address>
+            <p>
+                Email:
+                <a href="mailto:leifkitty21@gmail.com">leifkitty21@gmail.com</a>
+            </p>
+        </address>
+
+        <p>
+            <a href="https://github.com/Leif-Kitty" target="_blank" rel="noopener">
+                Leif Kitty's GitHub profile
+            </a>
+            <span aria-hidden="true">|</span>
+            <a href="https://www.linkedin.com/in/leif-kitty/" target="_blank" rel="noopener">
+                Leif Kitty's LinkedIn profile
+            </a>
+        </p>
+
+        <small>&copy; 2026 Leif Kitty. All rights reserved.</small>
+    </footer>
+</body>
+
+</html>
